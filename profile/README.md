@@ -20,6 +20,37 @@ PySysLink empowers you to:
 - **Open and Community‑Driven:** An open source alternative to proprietary simulation tools, built using widely adopted programming standards.
 
 ## Repository Structure
+```mermaid
+graph TD
+    %% Core Simulation Engine
+    A[PySysLinkBase<br/>Core Engine]
+    
+    %% Block Interface
+    B[BlockTypesBasicCpp<br/>Block Interface Definitions]
+    
+    %% Support Layer for C++ Blocks
+    C[BlockTypeSupportsBasicCpp<br/>Plugin Loader & Support]
+    
+    %% Concrete Block Libraries
+    D[BlockLibrariesBasicBlocksBasicCpp<br/>Concrete Blocks]
+    F[Other Block Libraries]
+    
+    %% Python Bindings
+    E[Python Bindings]
+
+    I[Other BlockTypeSupports]
+
+    %% Dependencies / Relationships
+
+    A -->|Loads plugins via| C
+    A -->|Can load additional|I
+    C -->|Dynamically loads| D
+    C -->|Can load additional| F
+    E -->|Wraps/Exposes| A
+
+    %% Optional: Show that BlockTypesBasicCpp is shared among Core and Support
+    C -->|Implements based on| B
+```
 
 The PySysLink organization is composed of several interrelated repositories:
 
