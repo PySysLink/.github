@@ -1,23 +1,29 @@
-# PySysLink
+# PySysLink – Open Source Block-Based Simulation Framework
 
-**PySysLink** is an open source simulation framework inspired by Simulink, designed for flexibility and ease of use in scientific computing and control engineering. Unlike traditional proprietary solutions, PySysLink leverages standard programming languages—primarily C++ and Python—to model, simulate, and analyze complex systems. Its YAML‑based model descriptions enable users to quickly define simulations that capture the dynamic behavior of interconnected blocks.
+**PySysLink** is a modular, open source simulation framework inspired by tools like Simulink. Designed for scientific computing, control engineering, and dynamic system modeling, PySysLink lets you define and simulate complex systems using a flexible architecture powered by **C++**, **Python**, and **VSCode**.
 
-## Overview
+📘 **Documentation**: [https://pysyslink.readthedocs.io/en/latest/](https://pysyslink.readthedocs.io/en/latest/)
 
-PySysLink empowers you to:
-  
-- **Define Models with YAML:** Describe your simulation models in a human‑readable YAML format, specifying blocks, connections, and parameters.
-- **Simulate Complex Systems:** Run simulations that support both discrete and continuous dynamics, with the ability to capture and log outputs.
-- **Extend with Plug‑Ins:** Dynamically load new block types and libraries through a robust plug‑in architecture.
-- **Integrate with Python:** Access and control simulations via Python bindings, enabling rapid prototyping and integration with other tools.
+## 🧩 What is PySysLink?
 
-### Key Features
+PySysLink is an open and extensible alternative to proprietary simulation tools. It allows users to:
+
+- ⚙️ **Define simulation models** using a visual block editor.
+- 🔄 **Run dynamic system simulations**, model physical systems, control loops, and cyber-physical architectures in a unified simulation engine.
+- 🧱 **Create and load plug-ins** for defining new blocks with greate flexibility.
+- 🐍 **Control simulations from Python**, using high-performance bindings to the C++ core.
+
+## 🚀 Key Features
 
 - **Modular Architecture:** Core simulation logic is decoupled from block implementations.
-- **Plug‑In Support:** Easily add new block libraries and type supports without modifying the core engine.
-- **Multi‑Language Integration:** Use PySysLink from C++, Python, or potentially other languages such as Julia.
-- **Customizable and Extensible:** Configure simulation behavior via YAML, and customize block events and outputs.
+- **Plug‑In Support:** Easily add new block libraries without modifying the core engine.
+- **C++ Core, Python Integration:** Use a high-performance C++ backend with Python interfaces for parameter initialization, execution, and full simulation control
+- **Text-Based Model Definitions:** Easily write and share simulation models using human-readable config files.
 - **Open and Community‑Driven:** An open source alternative to proprietary simulation tools, built using widely adopted programming standards.
+
+## PySysLink Structure
+
+![structure](../media/pysyslink_general_structure.drawio.png "PySysLink Structure")
 
 ## Repository Structure
 ```mermaid
