@@ -3,6 +3,7 @@
 **PySysLink** is a modular, open source simulation framework inspired by tools like Simulink. Designed for scientific computing, control engineering, and dynamic system modeling, PySysLink lets you define and simulate complex systems using a flexible architecture powered by **C++**, **Python**, and **VSCode**.
 
 📘 **Documentation**: [https://pysyslink.readthedocs.io/en/latest/](https://pysyslink.readthedocs.io/en/latest/)
+**Github Organization**: [https://github.com/PySysLink](https://github.com/PySysLink)
 
 ## 🧩 What is PySysLink?
 
